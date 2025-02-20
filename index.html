@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lydbilder - Probabilisk drift</title>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/white.css">
+  <style>
+    body {
+      cursor: pointer;
+    }
+    img {
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- Lysbilde 1 -->
+     <section data-background-color="#FFB3BA">
+
+  <p>Om ein let det flyta like mykje straum over linjene som <b>summen av kapasiteten</b> til linjene har ein eit problem om ei av linjene skulle falla ut.</p>
+      <img src="assets/assets-1-1.png" class="r-stretch" alt="Illustrasjon 1">
+</section>
+
+   <!-- Lysbilde 2 -->
+   <section data-background-color="#cdfae1">
+
+<p>Då fører den resterande linja meir straum enn teknisk kapasitet, og linja vert overlasta.</p>
+</section>
+
+    <!-- Lysbilde 3 -->
+    <section data-background-color="#ddbfd3">
+
+      <p>Store overlastar kan igjen føra til at kundar mister straumen og nettselskapet får kostnader gjennom ordninga med ikkje levert energi (KILE).</p>
+
+
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js/dist/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      transition: 'none',
+      progress: true,
+      controlsLayout: 'edges',
+      controlsTutorial: true
+    });
+
+    document.body.addEventListener('click', function(event) {
+      const width = window.innerWidth;
+      const clickX = event.clientX;
+
+      if (clickX > width / 2) {
+        Reveal.next();
+      } else {
+        Reveal.prev();
+      }
+    });
+  </script>
+</body>
+</html>
