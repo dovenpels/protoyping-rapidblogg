@@ -11,9 +11,9 @@
       cursor: pointer;
     }
     img {
-      border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+    
   </style>
 </head>
 <body>
@@ -21,23 +21,24 @@
     <div class="slides">
 
       <!-- Lysbilde 1 -->
-     <section data-background-color="#FFB3BA">
-<h3>Summen av kapasiteten</h3>
-  <p>Om ein let det flyta like mykje straum over linjene som <b>summen av kapasiteten</b> til linjene har ein eit problem om ei av linjene skulle falla ut.</p>
+     <section data-background-color="#caead7">
+      <h3>Flytavgrensing N-0</h3>
+  <p class="r-fit-text">Om ein let det flyta like mykje straum over linjene som <b>summen av kapasiteten</b> til linjene har ein eit problem om ei av linjene skulle falla ut.</p>
       <img src="assets/rapid-figurer-01.jpg" class="r-stretch" alt="Illustrasjon 1">
 </section>
 
    <!-- Lysbilde 2 -->
-   <section data-background-color="#cdfae1">
-
-<p>Då fører den resterande linja meir straum enn teknisk kapasitet, og linja vert overlasta.</p>
-</section>
+   <section data-background-color="#caead7">
+    <h3>Flytavgrensing N-0</h3>
+    <p class="r-fit-text">Då fører den resterande linja meir straum enn teknisk kapasitet, og linja vert overlasta.</p>
+    <img src="assets/rapid-figurer-02.jpg" class="r-stretch" alt="Illustrasjon 2">
+    </section>
 
     <!-- Lysbilde 3 -->
-    <section data-background-color="#ddbfd3">
-
-      <p>Store overlastar kan igjen føra til at kundar mister straumen og nettselskapet får kostnader gjennom ordninga med ikkje levert energi (KILE).</p>
-
+    <section data-background-color="#caead7">
+      <h3>Flytavgrensing N-0</h3>
+      <p class="r-fit-text">Store overlastar kan igjen føra til at kundar mister straumen og nettselskapet får kostnader gjennom ordninga med ikkje levert energi (KILE).</p>
+      <img src="assets/rapid-figurer-03.jpg" class="r-stretch" alt="Illustrasjon 3">
 
     </div>
   </div>
@@ -48,7 +49,9 @@
       transition: 'none',
       progress: true,
       controlsLayout: 'edges',
-      controlsTutorial: true
+      controlsTutorial: true,
+      embedded: false,
+      center: false,
     });
 
     document.body.addEventListener('click', function(event) {
